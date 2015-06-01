@@ -1,0 +1,2 @@
+/*C3*/SET SCHEMA PUBLIC
+create table if not exists songs(id integer primary key identity, name varchar(60),artist varchar(60),album varchar(60),path varchar(200),partyid integer)
