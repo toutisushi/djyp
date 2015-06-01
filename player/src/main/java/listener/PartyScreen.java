@@ -92,7 +92,7 @@ public class PartyScreen  extends JFrame implements ActionListener {
 		
 		URL url = null;
 		try {
-			url = new URL("http://" +serverIp+ ":8080/SpringMVC/rest/djparty/getpartybycreatorid?userid=1");
+			url = new URL("http://" +serverIp+ ":8080/SpringMVC/rest/djparty/getpartybycreatorid?userid="+djpy.getCurrentUser().getId());
 
 		HttpURLConnection conn = (HttpURLConnection) url
 				.openConnection();
